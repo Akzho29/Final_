@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style_draw.css">
+    <!--fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon//apple-icon-60x60.png ">
+        <link rel=" apple-touch-icon " sizes=" 72x72 " href=" img/favicon//apple-icon-72x72.png ">
+        <link rel=" apple-touch-icon " sizes=" 76x76 " href=" img/favicon//apple-icon-76x76.png ">
+        <link rel=" apple-touch-icon " sizes=" 114x114 " href=" img/favicon//apple-icon-114x114.png ">
+        <link rel=" apple-touch-icon " sizes=" 120x120 " href=" img/favicon//apple-icon-120x120.png ">
+        <link rel=" apple-touch-icon " sizes=" 144x144 " href=" img/favicon//apple-icon-144x144.png ">
+        <link rel=" apple-touch-icon " sizes=" 152x152 " href=" img/favicon//apple-icon-152x152.png ">
+        <link rel=" apple-touch-icon " sizes=" 180x180 " href=" img/favicon//apple-icon-180x180.png ">
+        <link rel=" icon " type=" image/png " sizes=" 192x192 " href=" img/favicon//android-icon-192x192.png ">
+        <link rel=" icon " type=" image/png " sizes=" 32x32 " href=" img/favicon//favicon-32x32.png ">
+        <link rel=" icon " type=" image/png " sizes=" 96x96 " href=" img/favicon//favicon-96x96.png ">
+        <link rel=" icon " type=" image/png " sizes=" 16x16 " href=" img/favicon//favicon-16x16.png ">
+        <link rel=" manifest " href=" /manifest.json ">
+        <meta name=" msapplication-TileColor " content=" #ffffff ">
+        <meta name=" msapplication-TileImage " content=" /ms-icon-144x144.png ">
+        <meta name=" theme-color " content=" #ffffff ">
+        <!-- js icons -->
+        <script src=" https://kit.fontawesome.com/0fee7a56be.js " crossorigin=" anonymous "></script>
+</head>
+<body>
+       <nav>
+        <div class="logo ">
+            <img style="width: 50px; height: 50px; " src="img/logo.png " alt="logo ">
+        </div>
+        <div class="search ">
+            <input type="text " name="search " class="search-txt " placeholder="Search ">
+            <i class="fas fa-search "></i>
+        </div>
+        <ul class="nav-links ">
+            <li><a href="index.html ">Home</a></li>
+            <li><a href="help_videopage.html ">Help</a></li>
+            <li><a href="paint_draw.html ">Pait</a></li>
+            <li><a href="paint_page.html ">Draw</a></li>
+            <li><a href="login_page.html ">log in</a></li>
+        </ul>
+        <div class="burger ">
+            <div class="items1 "></div>
+            <div class="items2 "></div>
+            <div class="items3 "></div>
+        </div>
+    </nav>
+<div id="content">
+    <div id="tools">
+        <button id="brush">Brash</button>
+        <button id="line">Line</button>
+        <button id="rectangle">Rectangle</button>
+        <button id="circle">Circle</button>
+        <button id="ellipse">Ellipse</button>
+        <button id="spray">Spray</button>
+        <button id="eraser">Eraser</button>
+        <button id="fill">Fill</button>
+        <br>
+        <button id="copy">Copy</button>
+        <button id="copyrand">Copy random area</button>
+        <button id="paste">Paste</button>
+        <button id="text">Text</button>
+        <br><div style="margin-left: 70px">
+        Text size
+        <input type="number" id="text-size" min="6" max="100" value="14">
+        <br>Font
+        <select id="font">
+            <option value="LucidaConsole">Lucida Console</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Arial">Arial</option>
+            <option value="ArialBlack">Arial Black</option>
+        </select></div>
+    </div>
+    <div id="manage">
+        <canvas id="brush_size" width="50" height="50"></canvas>
+        Brash size <input type="range" id="width_range" value="10" min="1">
+        Opacity <input type="range" id="opacity_range" value="100">
+    </div>
+    <div id="colors">
+        <button class="black" id="#000000"></button>
+        <button class="white" id='#FFFFFF'></button>
+        <button class="blue" id='#0000FF'></button>
+        <button class="red" id='#FF0000'></button>
+        <button class="yellow" id='#FFFF00'></button>
+        <button class="green" id='#008000'></button>
+        <input type="color" id="color" value="#0000FF">
+        <input type="hidden" id="color_value_form">
+    </div>
+    <div id="functions">
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="id_download">Save</button>
+        <button id="clear">Clear</button>
+    </div>
+
+    <div id="areaForPaint">
+        <canvas id="paint"></canvas>
+    </div>
+
+
+
+</div>
+
+<script src="paint_draw.js"></script>
+<script src="script_draw.js"></script>
+
+</body>
+</html>
